@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+
+  <body class="m-4">
+    <div class="navbar bg-white text-neutral-content rounded-lg">
+      <div class="navbar-start">
+        <div class="drawer z-20">
+          <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+          <div class="drawer-content">
+            <label
+              for="my-drawer"
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost drawer-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </label>
+          </div>
+          <div class="drawer-side">
+            <label
+              for="my-drawer"
+              aria-label="close sidebar"
+              class="drawer-overlay"
+            ></label>
+            <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+              <!-- Sidebar content here -->
+              <ul class="menu bg-base-200 rounded-box w-auto">
+                <li>
+                  <a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                      />
+                    </svg>
+                    Item 2
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    Item 1
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                      />
+                    </svg>
+                    Item 3
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-center">
+        <a class="btn btn-ghost text-xl">Welcome Dinesh..!</a>
+      </div>
+      <div class="navbar-end">
+        <button class="btn btn-ghost btn-circle">
+          <div class="indicator">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+              />
+            </svg>
+            <span class="badge badge-xs badge-primary indicator-item"></span>
+          </div>
+        </button>
+        <div class="dropdown dropdown-end">
+          <div
+            tabindex="0"
+            role="button"
+            class="btn btn-ghost btn-circle avatar"
+          >
+            <div class="w-10 rounded-full">
+              <img
+                alt="Tailwind CSS Navbar component"
+                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+              />
+            </div>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          >
+            <li>
+              <a class="justify-between">
+                Profile
+                <span class="badge">New</span>
+              </a>
+            </li>
+            <li><a>Change Password</a></li>
+            <li><a>Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card z-10 bg-neutral shadow-xl mt-10 w-full">
+      <figure class="h-40">
+        <img
+          class="object-cover"
+          src="/Web Dev/Tailwindcss/moon-palm-trees-synthwave-hd-wallpaper-uhdpaper.com-215@0@k.jpg"
+          alt="Album"
+        />
+      </figure>
+
+      <div
+        class="card-body flex flex-col items-center justify-between pt-0 sm:flex-col lg:flex-row lg:items-start lg:justify-start"
+      >
+        <div class="rounded-full size-28 lg:ml-4 lg:-mt-6 -mt-12 bg-red-500">
+          <div class="avatar">
+            <div
+              class="ring-primary ring-offset-base-100 w-28 rounded-full ring ring-offset-2"
+            >
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="m-4 lg:text-left text-center">
+          <h1 class="card-title align-text-top">
+            Kaluwa Dewage Dinesh Harsha Erandaka
+          </h1>
+          <p>Associate Trainee</p>
+          <p>EMP No - 718876</p>
+          <p class="about">“Moonlight drenched in your absence.” 🌙✨</p>
+        </div>
+
+        <div class="card-actions flex lg:absolute lg:right-0 lg:bottom-0 mx-4">
+          <button class="btn btn-primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1)"
+            >
+              <path
+                d="M16 2H8C4.691 2 2 4.691 2 8v13a1 1 0 0 0 1 1h13c3.309 0 6-2.691 6-6V8c0-3.309-2.691-6-6-6zm4 14c0 2.206-1.794 4-4 4H4V8c0-2.206 1.794-4 4-4h8c2.206 0 4 1.794 4 4v8z"
+              ></path>
+              <path
+                d="M7 14.987v1.999h1.999l5.529-5.522-1.998-1.998zm8.47-4.465-1.998-2L14.995 7l2 1.999z"
+              ></path>
+            </svg>
+
+            Edit Profile
+          </button>
+          <button class="btn btn-primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
+            >
+              <path
+                d="M12 2C9.243 2 7 4.243 7 7v2H6c-1.103 0-2 .897-2 2v9c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-9c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v2H9V7zm9.002 13H13v-2.278c.595-.347 1-.985 1-1.722 0-1.103-.897-2-2-2s-2 .897-2 2c0 .736.405 1.375 1 1.722V20H6v-9h12l.002 9z"
+              ></path>
+            </svg>
+            Change Password
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+
+    <div class="fixed w-full bottom-0 right-0 lg:hidden">
+      <ul
+        class="menu flex justify-between menu-horizontal bg-neutral-700 rounded-box"
+      >
+        <li>
+          <a class="tooltip" data-tip="Home">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="tooltip" data-tip="Details">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="tooltip" data-tip="Stats">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="tooltip" data-tip="Report Navigator">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="h-5 w-5"
+              fill="currentColor"
+            >
+              <path
+                d="M14.2 2H6.8C5.81 2 5 2.81 5 3.8V20.2C5 21.19 5.81 22 6.8 22H17.2C18.19 22 19 21.19 19 20.2V8.8L14.2 2ZM14 3.5L18.5 8H14V3.5ZM6.8 20.2V3.8H12V9H18V20.2H6.8ZM8 12.5H16C16.55 12.5 17 12.95 17 13.5C17 14.05 16.55 14.5 16 14.5H8C7.45 14.5 7 14.05 7 13.5C7 12.95 7.45 12.5 8 12.5ZM8 16.5H12C12.55 16.5 13 16.95 13 17.5C13 18.05 12.55 18.5 12 18.5H8C7.45 18.5 7 18.05 7 17.5C7 16.95 7.45 16.5 8 16.5Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="tooltip" data-tip="Profile">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              viewBox="0 0 24 24"
+              style="fill: rgb(166, 173, 187); transform: ; msfilter: "
+            >
+              <path
+                d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z"
+              ></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
